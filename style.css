@@ -2,3 +2,74 @@ html {
   height: 100%;
   width: 100%;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+   color: white;
+}
+
+header {
+  background-color: #563850;
+  padding: 1% 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 1% 0;
+}
+
+h2,
+.copyright {
+  text-align: center;
+}
+
+img {
+  border-radius: 2vw;
+  width: 14%;
+  border: solid white 1px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  flex-wrap: wrap;
+}
+
+footer {
+  text-align: center;
+  padding: 2%;
+  background-color: #563850;
+}
+
+.spacer {
+  height: 5vw;
+}
+
+.gallery-section {
+  height: 60vh;
+  overflow: auto;
+}
+
+@media(max-width:768px) {
+  img {
+    width: 30%;
+  }
+
+  .gallery-section {
+    height: initial;
+  }
+}
+
+@media(max-width: 576px) {
+  img {
+    width: 45%;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+}
